@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CrunchyBites | Ayam Goreng Crispy No.1</title>
+    <meta name="description"
+        content="Nikmati kerenyahan ayam goreng CrunchyBites dengan bumbu rahasia yang meresap sampai ke tulang. Pesan sekarang!">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Nunito:wght@400;600;800&display=swap"
+        rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-content">
+            <a href="#" class="logo"><i class="fas fa-drumstick-bite" style="color: var(--primary-color)"></i>
+                Crunchy<span>Bites</span></a>
+            <ul class="nav-links">
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#menu">Menu Spesial</a></li>
+                <li><a href="#promo">Promo</a></li>
+                <li><a href="#lokasi">Lokasi Kami</a></li>
+            </ul>
+            <a href="https://wa.me/6281234567890?text=Halo%20CrunchyBites,%20saya%20mau%20pesan%20delivery!"
+                target="_blank" class="btn btn-nav btn-pill">
+                <i class="fab fa-whatsapp"></i> Delivery Order
+            </a>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+        <div class="hero-bg">
+            <!-- Decorative abstract shapes for food vibe -->
+            <div class="blob shape-1"></div>
+            <div class="blob shape-2"></div>
+        </div>
+        <div class="container hero-wrapper">
+            <div class="hero-content reveal">
+                <div class="badge-pill">🤤 Bikin Nagih Terus!</div>
+                <h1 class="hero-title">Kerenyahannya Bikin <span>Lupa Diet!</span></h1>
+                <p class="hero-desc">Rasakan sensasi ayam goreng dengan balutan tepung crispy rahasia dan bumbu gurih
+                    yang meresap sempurna hingga ke tulang. Digoreng dadakan saat kamu pesan!</p>
+                <div class="hero-actions">
+                    <a href="https://wa.me/6281234567890?text=Halo%20CrunchyBites,%20saya%20mau%20Pesan%20Ayam."
+                        target="_blank" class="btn btn-primary btn-pill btn-bounce">
+                        Pesan Sekarang <i class="fas fa-shopping-bag"></i>
+                    </a>
+                    <a href="#menu" class="btn btn-secondary btn-pill text-dark">
+                        Lihat Menu
+                    </a>
+                </div>
+                <div class="rating-box pt-1">
+                    <div class="stars">
+                        <i class="fas fa-star text-yellow"></i>
+                        <i class="fas fa-star text-yellow"></i>
+                        <i class="fas fa-star text-yellow"></i>
+                        <i class="fas fa-star text-yellow"></i>
+                        <i class="fas fa-star-half-alt text-yellow"></i>
+                    </div>
+                    <span>Dinikmati lebih dari 10.000+ pelanggan.</span>
+                </div>
+            </div>
+            <div class="hero-image reveal hero-img-delay">
+                <div class="img-container">
+                    <!-- Circular backdrop for food images -->
+                    <div class="img-backdrop"></div>
+                    <img src="assets/hero_chicken_1771832590360.png" alt="Ayam Goreng Crispy" class="floating-food" />
+                    <!-- Decorative badges -->
+                    <div class="price-badge">Rp 15k!</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Menu Section (Card Design) -->
+    <section class="menu-section" id="menu">
+        <div class="container section-header text-center reveal">
+            <h2>Menu <span>Best Seller</span> Kami</h2>
+            <p>Pilihan menu favorit yang selalu ludes dipesan setiap hari. Awas ngiler!</p>
+        </div>
+
+        <div class="container menu-grid">
+            <!-- Menu Item 1 -->
+            <div class="menu-card reveal">
+                <div class="card-img-wrapper">
+                    <img src="assets/hero_chicken_1771832590360.png" alt="Paket Puas" class="menu-img">
+                </div>
+                <div class="menu-content">
+                    <div class="menu-header">
+                        <h3>Paket Kenyang Puas</h3>
+                        <span class="price">Rp 25.000</span>
+                    </div>
+                    <p>2 Ayam Crispy (Paha/Dada) + Nasi Putih + Es Teh Manis Jumbo.</p>
+                    <a href="https://wa.me/6281234567890?text=Pesan%201%20Paket%20Kenyang%20Puas." target="_blank"
+                        class="btn btn-primary btn-full btn-pill"><i class="fas fa-cart-plus"></i> Tambah</a>
+                </div>
+            </div>
+
+            <!-- Menu Item 2 -->
+            <div class="menu-card reveal pop-delay-1">
+                <div class="card-img-wrapper">
+                    <img src="assets/spicy_wings_1771832638586.png" alt="Fire Wings" class="menu-img">
+                    <div class="hot-badge"><i class="fas fa-fire"></i> Pedas</div>
+                </div>
+                <div class="menu-content">
+                    <div class="menu-header">
+                        <h3>Korean Fire Wings</h3>
+                        <span class="price">Rp 30.000</span>
+                    </div>
+                    <p>6 pcs sayap ayam digabungkan dengan saus gochujang pedas manis khas Korea.</p>
+                    <a href="https://wa.me/6281234567890?text=Pesan%201%20Korean%20Fire%20Wings." target="_blank"
+                        class="btn btn-primary btn-full btn-pill"><i class="fas fa-cart-plus"></i> Tambah</a>
+                </div>
+            </div>
+
+            <!-- Menu Item 3 -->
+            <div class="menu-card reveal pop-delay-2">
+                <div class="card-img-wrapper">
+                    <img src="assets/burger_meal_1771832612721.png" alt="Crunchy Burger" class="menu-img">
+                </div>
+                <div class="menu-content">
+                    <div class="menu-header">
+                        <h3>Crunchy Chicken Burger</h3>
+                        <span class="price">Rp 35.000</span>
+                    </div>
+                    <p>Fillet ayam super crispy, keju lumer, selada segar & kentang goreng renyah.</p>
+                    <a href="https://wa.me/6281234567890?text=Pesan%201%20Crunchy%20Burger%20Meal." target="_blank"
+                        class="btn btn-primary btn-full btn-pill"><i class="fas fa-cart-plus"></i> Tambah</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Us (Icon Layout) -->
+    <section class="features-food">
+        <div class="container feature-grid text-center reveal">
+            <div class="feature-item">
+                <div class="icon-circle"><i class="fas fa-drumstick-bite"></i></div>
+                <h4>100% Daging Segar</h4>
+                <p>Kami tidak pernah menggunakan ayam beku untuk menjaga kualitas *juicy* daging.</p>
+            </div>
+            <div class="feature-item">
+                <div class="icon-circle"><i class="fas fa-seedling"></i></div>
+                <h4>Rempah Pilihan</h4>
+                <p>Direndam dalam marinasi bumbu rempah rahasia selama 12 jam. Bumbu meresap!</p>
+            </div>
+            <div class="feature-item">
+                <div class="icon-circle"><i class="fas fa-motorcycle"></i></div>
+                <h4>Delivery Cepat</h4>
+                <p>Sistem pesan antar langsung melalui WhatsApp memastikan makanan tiba hangat.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Banner -->
+    <section class="promo-banner text-center reveal" id="promo">
+        <div class="container">
+            <div class="banner-box">
+                <h2>Lapar? Jangan Ditahan! <br> Promo Spesial Hari Ini 🎉</h2>
+                <p class="mb-2 text-large">Gunakan kode <strong>CRUNCHY20</strong> dan dapatkan diskon 20% untuk
+                    pemesanan via WhatsApp sekarang juga!</p>
+                <a href="https://wa.me/6281234567890?text=Halo%20CrunchyBites,%20saya%20mau%20pesan%20pakai%20promo%20CRUNCHY20!"
+                    target="_blank" class="btn btn-dark btn-pill btn-large btn-bounce">
+                    <i class="fab fa-whatsapp fa-xl"></i> Klaim Diskon WA
+                </a>
+                <img src="assets/burger_meal_1771832612721.png" alt="Burger promo" class="promo-img-decor">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content border-top-dashed pt-4" id="lokasi">
+            <div class="footer-brand">
+                <a href="#" class="logo"><i class="fas fa-drumstick-bite" style="color: var(--primary-color)"></i>
+                    Crunchy<span>Bites</span></a>
+                <p class="mt-1 mb-1">Rajanya ayam goreng renyah di kota Anda. Buka setiap hari dari jam 10 Pagi hingga
+                    10 Malam.</p>
+                <div class="social-links-food">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                </div>
+            </div>
+            <div class="footer-contact">
+                <h4 class="mb-1">📍 Lokasi Store</h4>
+                <p>Jl. Sudirman No 45, Food Court Area, Jakarta Pusat.</p>
+                <h4 class="mt-1 mb-1">📞 Hubungi Kami</h4>
+                <p>WA: +62 812-3456-7890 (Delivery Order)</p>
+            </div>
+        </div>
+        <div class="footer-bottom text-center pt-2">
+            <p>&copy; 2026 CrunchyBites. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

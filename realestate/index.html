@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EliteEstates | Temukan Rumah Impian Anda</title>
+    <meta name="description"
+        content="EliteEstates adalah agen properti terpercaya yang membantu Anda menemukan hunian modern, apartemen mewah, dan investasi real estate terbaik.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Top Bar (Contact Info) -->
+    <div class="top-bar">
+        <div class="container top-bar-content">
+            <div class="contact-info">
+                <span><i class="fas fa-envelope"></i> info@eliteestates.com</span>
+                <span><i class="fas fa-phone-alt"></i> +62 812 3456 7890</span>
+            </div>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-content">
+            <a href="#" class="logo">Elite<span>Estates</span></a>
+            <ul class="nav-links">
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#properti">Properti</a></li>
+                <li><a href="#layanan">Layanan</a></li>
+                <li><a href="#tentang">Tentang Kami</a></li>
+            </ul>
+            <a href="https://wa.me/6281234567890?text=Halo%20EliteEstates,%20saya%20ingin%20konsultasi%20properti."
+                target="_blank" class="btn btn-nav btn-outline">
+                Hubungi Agen
+            </a>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+        <div class="hero-bg">
+            <img src="assets/hero_house_1771833793458.png" alt="Luxury Modern House" />
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="container hero-wrapper">
+            <div class="hero-content reveal">
+                <h1 class="hero-title">Temukan Hunian <span>Eksklusif</span> Sempurna Anda.</h1>
+                <p class="hero-desc">Kami menghubungkan Anda dengan properti paling prestisius di lokasi strategis.
+                    Jadikan pencarian rumah impian dan investasi masa depan Anda lebih mudah bersama agen terpercaya.
+                </p>
+
+                <!-- Floating Search Bar -->
+                <div class="search-bar">
+                    <div class="search-input">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <input type="text" placeholder="Cari Lokasi (Cth: Jakarta Selatan)">
+                    </div>
+                    <div class="search-input">
+                        <i class="fas fa-home"></i>
+                        <select>
+                            <option value="">Tipe Properti</option>
+                            <option value="house">Rumah Tapak</option>
+                            <option value="apartment">Apartemen</option>
+                            <option value="villa">Villa</option>
+                        </select>
+                    </div>
+                    <button class="btn btn-primary btn-search"><i class="fas fa-search"></i> Cari</button>
+                </div>
+
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <h3>1.5K+</h3>
+                        <p>Properti Terjual</p>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <h3>20+</h3>
+                        <p>Penghargaan</p>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <h3>99%</h3>
+                        <p>Klien Puas</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Properti Section (Featured Listings) -->
+    <section class="properties" id="properti">
+        <div class="container section-header reveal">
+            <h2>Properti <span>Unggulan</span></h2>
+            <p>Jelajahi kurasi properti terbaik kami bulan ini, dari apartemen tengah kota hingga rumah pinggiran yang
+                asri.</p>
+        </div>
+
+        <div class="container prop-grid">
+            <!-- Property 1 -->
+            <div class="prop-card reveal">
+                <div class="prop-img">
+                    <!-- Placeholder using styling -->
+                    <div class="img-placeholder house-ph-1"></div>
+                    <div class="status-badge sale">Dijual</div>
+                    <div class="price-tag">Rp 4.5 Milyar</div>
+                </div>
+                <div class="prop-content">
+                    <h3>Modern Oasis Residence</h3>
+                    <p class="location"><i class="fas fa-map-marker-alt"></i> Kebayoran Baru, Jakarta Selatan</p>
+                    <div class="prop-facilities">
+                        <span><i class="fas fa-bed"></i> 4 KT</span>
+                        <span><i class="fas fa-bath"></i> 3 KM</span>
+                        <span><i class="fas fa-vector-square"></i> 250 m²</span>
+                    </div>
+                    <div class="prop-footer">
+                        <a href="https://wa.me/6281234567890?text=Halo%20saya%20tertarik%20dengan%20Modern%20Oasis%20Residence."
+                            target="_blank" class="btn btn-primary btn-full"><i class="fab fa-whatsapp"></i> Jadwalkan
+                            Viewing</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Property 2 -->
+            <div class="prop-card reveal delay-1">
+                <div class="prop-img">
+                    <div class="img-placeholder apt-ph-1"></div>
+                    <div class="status-badge rent">Disewakan</div>
+                    <div class="price-tag">Rp 15 Juta/Bln</div>
+                </div>
+                <div class="prop-content">
+                    <h3>Skyline Penthouse Apartment</h3>
+                    <p class="location"><i class="fas fa-map-marker-alt"></i> Sudirman CBD, Jakarta Pusat</p>
+                    <div class="prop-facilities">
+                        <span><i class="fas fa-bed"></i> 2 KT</span>
+                        <span><i class="fas fa-bath"></i> 2 KM</span>
+                        <span><i class="fas fa-vector-square"></i> 95 m²</span>
+                    </div>
+                    <div class="prop-footer">
+                        <a href="https://wa.me/6281234567890?text=Halo%20saya%20tertarik%20menyewa%20Skyline%20Penthouse."
+                            target="_blank" class="btn btn-primary btn-full"><i class="fab fa-whatsapp"></i> Jadwalkan
+                            Viewing</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Property 3 -->
+            <div class="prop-card reveal delay-2">
+                <div class="prop-img">
+                    <div class="img-placeholder house-ph-2"></div>
+                    <div class="status-badge sale">Dijual</div>
+                    <div class="price-tag">Rp 2.8 Milyar</div>
+                </div>
+                <div class="prop-content">
+                    <h3>Botanical Garden House</h3>
+                    <p class="location"><i class="fas fa-map-marker-alt"></i> BSD City, Tangerang Selatan</p>
+                    <div class="prop-facilities">
+                        <span><i class="fas fa-bed"></i> 3 KT</span>
+                        <span><i class="fas fa-bath"></i> 2 KM</span>
+                        <span><i class="fas fa-vector-square"></i> 150 m²</span>
+                    </div>
+                    <div class="prop-footer">
+                        <a href="https://wa.me/6281234567890?text=Halo%20saya%20tertarik%20dengan%20Botanical%20Garden%20House."
+                            target="_blank" class="btn btn-primary btn-full"><i class="fab fa-whatsapp"></i> Jadwalkan
+                            Viewing</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center reveal" style="margin-top: 3rem;">
+            <a href="https://wa.me/6281234567890?text=Kirimkan%20saya%20katalog%20properti%20lengkap." target="_blank"
+                class="btn btn-outline text-dark">Lihat Semua Properti <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </section>
+
+    <!-- Services / Trust Section -->
+    <section class="services-trust" id="layanan">
+        <div class="container trust-wrapper">
+            <div class="trust-content reveal">
+                <h2>Mengapa Memilih <span>EliteEstates?</span></h2>
+                <p>Membeli atau menjual properti adalah salah satu keputusan terbesar dalam hidup Anda. Kami memastikan
+                    proses tersebut berjalan mulus, aman, dan menguntungkan.</p>
+                <div class="service-list">
+                    <div class="service-item">
+                        <div class="service-icon"><i class="fas fa-handshake"></i></div>
+                        <div>
+                            <h4>Negosiasi Terbaik</h4>
+                            <p>Agen kami sangat berpengalaman dalam menegosiasikan harga terbaik untuk Anda.</p>
+                        </div>
+                    </div>
+                    <div class="service-item">
+                        <div class="service-icon"><i class="fas fa-shield-alt"></i></div>
+                        <div>
+                            <h4>Legalitas Terjamin</h4>
+                            <p>Tim legal kami memverifikasi seluruh dokumen dan sertifikat properti (SHM/HGB).</p>
+                        </div>
+                    </div>
+                    <div class="service-item">
+                        <div class="service-icon"><i class="fas fa-chart-line"></i></div>
+                        <div>
+                            <h4>Konsultasi Investasi</h4>
+                            <p>Dapatkan pandangan pakar mengenai tren nilai properti di masa depan.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Trust visuals -->
+            <div class="trust-visual reveal delay-1">
+                <div class="visual-grid">
+                    <div class="vg-item ph-tall"></div>
+                    <div class="vg-column">
+                        <div class="vg-item ph-short-1"></div>
+                        <div class="vg-item ph-short-2"></div>
+                    </div>
+                </div>
+                <div class="experience-badge">
+                    <h2>15+</h2>
+                    <p>Tahun Pengalaman</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Banner -->
+    <section class="cta-banner reveal">
+        <div class="container cta-container">
+            <div class="cta-banner-content">
+                <h2>Siap Menjual Properti Anda?</h2>
+                <p>Dapatkan evaluasi harga gratis dan strategi pemasaran eksklusif dari agen profesional kami. Jual
+                    properti Anda lebih cepat dan bernilai tinggi.</p>
+                <a href="https://wa.me/6281234567890?text=Halo%20agen,%20saya%20ingin%20menjual%20properti%20saya."
+                    target="_blank" class="btn btn-light">Hubungi Kami Sekarang</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="tentang">
+        <div class="container footer-content border-bottom">
+            <div class="footer-brand">
+                <a href="#" class="logo">Elite<span>Estates</span></a>
+                <p class="mt-2">Mitra properti terpercaya yang berkomitmen penuh untuk mewujudkan hunian dan investasi
+                    impian masa depan Anda.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Perusahaan</h4>
+                <ul>
+                    <li><a href="#">Tentang Kami</a></li>
+                    <li><a href="#">Karir</a></li>
+                    <li><a href="#">Berita & Artikel</a></li>
+                    <li><a href="#">Syarat & Ketentuan</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact-info">
+                <h4>Kantor Pusat</h4>
+                <p><i class="fas fa-map-marker-alt"></i> Gedung Elite Tower Lt. 12<br>Jl. Jend. Sudirman Kav 45, Jakarta
+                </p>
+                <p><i class="fas fa-phone-alt"></i> +62 812-3456-7890</p>
+                <p><i class="fas fa-envelope"></i> hello@eliteestates.com</p>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 EliteEstates Realty. All rights reserved.</p>
+            <div class="social-footer">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

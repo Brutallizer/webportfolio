@@ -1,0 +1,13 @@
+# Abaikan folder sistem
+.DS_Store
+Thumbs.db
+desktop.ini
+*.log
+
+# Abaikan editor settings
+.vscode/
+.idea/
+
+# Abaikan file temp
+*.tmp
+*.bak

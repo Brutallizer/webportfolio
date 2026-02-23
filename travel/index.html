@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wanderlust | Jelajahi Dunia Bersama Kami</title>
+    <meta name="description"
+        content="Wanderlust Travel Tour menyediakan paket liburan tak terlupakan ke destinasi impian dengan harga terjangkau. Mulai perjalanan Anda sekarang!">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Caveat:wght@700&display=swap"
+        rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Back to top button -->
+    <a href="#home" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-content">
+            <a href="#" class="logo"><i class="fas fa-paper-plane text-primary"></i> Wander<span>lust</span></a>
+            <ul class="nav-links">
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#destinasi">Destinasi</a></li>
+                <li><a href="#paket">Paket Tour</a></li>
+                <li><a href="#ulasan">Ulasan</a></li>
+            </ul>
+            <a href="https://wa.me/6281234567890?text=Halo%20Wanderlust,%20saya%20ingin%20tanya%20paket%20liburan."
+                target="_blank" class="btn btn-primary btn-round">
+                Konsultasi Gratis <i class="fas fa-comment-dots"></i>
+            </a>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+        <div class="hero-bg">
+            <img src="assets/hero_travel_1771834449464.png" alt="Tropical Beach Vacation" />
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="container hero-wrapper text-center">
+            <div class="hero-content reveal">
+                <span class="badge-travel">Siapkan Kopermu! 🌍</span>
+                <h1 class="hero-title">Jangan Hanya Mimpi,<br><span>Jelajahi Sekarang.</span></h1>
+                <p class="hero-desc">Bebaskan dirimu dari rutinitas. Kami siap merancang pengalaman perjalanan tak
+                    terlupakan ke destinasi paling eksotis di seluruh dunia.</p>
+                <div class="hero-actions">
+                    <a href="#destinasi" class="btn btn-primary btn-large btn-round btn-glow">
+                        Mulai Petualangan <i class="fas fa-compass fa-spin-hover"></i>
+                    </a>
+                    <a href="https://wa.me/6281234567890?text=Kirimkan%20katalog%20destinasi%20terbaru." target="_blank"
+                        class="btn btn-glass btn-large btn-round">
+                        <i class="fas fa-download"></i> Unduh Brosur
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Curved shape divider -->
+        <div class="custom-shape-divider-bottom">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path
+                    d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                    class="shape-fill"></path>
+            </svg>
+        </div>
+    </header>
+
+    <!-- Search / Filter Ribbon -->
+    <div class="search-ribbon reveal z-index-top">
+        <div class="container">
+            <div class="tour-search-form">
+                <div class="search-group">
+                    <label>Ke Mana?</label>
+                    <div class="input-with-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <input type="text" placeholder="Cari destinasi...">
+                    </div>
+                </div>
+                <div class="search-divider"></div>
+                <div class="search-group">
+                    <label>Kapan?</label>
+                    <div class="input-with-icon">
+                        <i class="far fa-calendar-alt"></i>
+                        <input type="text" placeholder="Pilih Bulan">
+                    </div>
+                </div>
+                <div class="search-divider"></div>
+                <div class="search-group">
+                    <label>Tipe Liburan</label>
+                    <div class="input-with-icon">
+                        <i class="fas fa-umbrella-beach"></i>
+                        <select>
+                            <option>Semua Tipe</option>
+                            <option>Pantai & Pulau</option>
+                            <option>Pegunungan</option>
+                            <option>City Tour</option>
+                        </select>
+                    </div>
+                </div>
+                <button class="btn btn-primary search-btn"><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Destinasi Populer Section -->
+    <section class="destinations" id="destinasi">
+        <div class="container section-header text-center reveal">
+            <h4 class="subtitle">Lokasi Impian</h4>
+            <h2>Destinasi <span>Terpopuler</span></h2>
+            <p>Pilih dari lokasi favorit para traveler tahun ini dan buat cerita petualanganmu sendiri.</p>
+        </div>
+
+        <div class="container dest-grid">
+            <!-- Dest 1 -->
+            <div class="dest-card reveal">
+                <div class="dest-img-wrap">
+                    <img src="assets/dest_bali_1771834473549.png" alt="Bali Indonesia" class="dest-img">
+                    <div class="dest-badge">Domestik</div>
+                    <div class="favorite-btn"><i class="far fa-heart"></i></div>
+                </div>
+                <div class="dest-content">
+                    <div class="rating"><i class="fas fa-star text-warning"></i> 4.9 (2.1k Ulasan)</div>
+                    <h3>Pesona Bali & Nusa Penida</h3>
+                    <p class="location"><i class="fas fa-map-pin"></i> Indonesia</p>
+                    <div class="dest-footer">
+                        <div class="price">
+                            <span class="price-start">Mulai dari</span>
+                            <h4>Rp 2.500k</h4>
+                        </div>
+                        <a href="https://wa.me/6281234567890?text=Saya%20tertarik%20paket%20tour%20Kuta%20Bali."
+                            target="_blank" class="btn btn-outline btn-round btn-sm">Lihat Detail</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dest 2 -->
+            <div class="dest-card reveal delay-1">
+                <div class="dest-img-wrap">
+                    <img src="assets/dest_japan_1771834500982.png" alt="Kyoto Japan" class="dest-img">
+                    <div class="dest-badge bg-secondary">Internasional</div>
+                    <div class="favorite-btn"><i class="far fa-heart"></i></div>
+                </div>
+                <div class="dest-content">
+                    <div class="rating"><i class="fas fa-star text-warning"></i> 4.8 (1.5k Ulasan)</div>
+                    <h3>Cherry Blossom Kyoto</h3>
+                    <p class="location"><i class="fas fa-map-pin"></i> Jepang</p>
+                    <div class="dest-footer">
+                        <div class="price">
+                            <span class="price-start">Mulai dari</span>
+                            <h4>Rp 12.000k</h4>
+                        </div>
+                        <a href="https://wa.me/6281234567890?text=Saya%20tertarik%20paket%20tour%20Kyoto%20Jepang."
+                            target="_blank" class="btn btn-outline btn-round btn-sm">Lihat Detail</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dest 3 -->
+            <div class="dest-card reveal delay-2">
+                <div class="dest-img-wrap">
+                    <div class="dest-img-placeholder swiss-bg"></div>
+                    <div class="dest-badge bg-secondary">Internasional</div>
+                    <div class="favorite-btn"><i class="far fa-heart"></i></div>
+                </div>
+                <div class="dest-content">
+                    <div class="rating"><i class="fas fa-star text-warning"></i> 5.0 (980 Ulasan)</div>
+                    <h3>Alpen Swiss & Desa Zermatt</h3>
+                    <p class="location"><i class="fas fa-map-pin"></i> Swiss</p>
+                    <div class="dest-footer">
+                        <div class="price">
+                            <span class="price-start">Mulai dari</span>
+                            <h4>Rp 25.500k</h4>
+                        </div>
+                        <a href="https://wa.me/6281234567890?text=Saya%20tertarik%20paket%20tour%20Swiss."
+                            target="_blank" class="btn btn-outline btn-round btn-sm">Lihat Detail</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mengapa Kami Section -->
+    <section class="features-travel bg-light">
+        <div class="container feature-wrapper">
+            <div class="feature-visual reveal">
+                <div class="polaroid-stack">
+                    <img src="assets/hero_travel_1771834449464.png" alt="Travel Momment" class="pic pic-1">
+                    <img src="assets/dest_japan_1771834500982.png" alt="Travel Momment" class="pic pic-2">
+                    <div class="floating-badge">
+                        <i class="fas fa-shield-alt fa-2x"></i>
+                        <div>
+                            <strong>100%</strong>
+                            <span>Aman & Terpercaya</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="feature-content reveal delay-1" id="paket">
+                <h4 class="subtitle">Kelebihan Kami</h4>
+                <h2>Liburan Tanpa Pusing, <span>Kami yang Urus!</span></h2>
+                <p class="mb-2">Tinggalkan kerumitan merencanakan jadwal, tiket, dan hotel. Fokus saja pada pembuatan
+                    memori indah, sisanya tim profesional kami yang selesaikan.</p>
+
+                <div class="benefit-list">
+                    <div class="benefit-item">
+                        <div class="icon-box"><i class="fas fa-route"></i></div>
+                        <div class="text-box">
+                            <h4>Itinerary Fleksibel</h4>
+                            <p>Jadwal bisa disesuaikan dengan keinginan (Custom Tour).</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="icon-box"><i class="fas fa-bed"></i></div>
+                        <div class="text-box">
+                            <h4>Hotel Premium</h4>
+                            <p>Kerjasama dengan jaringan hotel bintang 4 & 5 terbaik.</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="icon-box"><i class="fas fa-headset"></i></div>
+                        <div class="text-box">
+                            <h4>Layanan 24/7</h4>
+                            <p>Tour guide lokal berpengalaman menemani perjalanan Anda.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Promo CTA -->
+    <section class="cta-travel text-center reveal" id="ulasan">
+        <div class="container cta-box-travel">
+            <h2>Diskon 15% Untuk Pemesanan <br><em>Early Bird</em> Bulan Ini!</h2>
+            <p>Rencanakan liburan akhir tahun Anda lebih cepat dan hemat lebih banyak. Klaim kode promonya sekarang via
+                WhatsApp kami.</p>
+            <a href="https://wa.me/6281234567890?text=Halo,%20saya%20mau%20Klaim%20Promo%20Early%20Bird%2015%25!"
+                target="_blank" class="btn btn-dark btn-large btn-round btn-bounce mt-1">
+                <i class="fab fa-whatsapp"></i> Klaim Promo Tipe Keluarga
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="custom-shape-divider-top">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path
+                    d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+                    opacity=".25" class="shape-fill"></path>
+                <path
+                    d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+                    opacity=".5" class="shape-fill"></path>
+                <path
+                    d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+                    class="shape-fill"></path>
+            </svg>
+        </div>
+
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <a href="#" class="logo text-white"><i class="fas fa-paper-plane text-primary"></i>
+                    Wander<span>lust</span></a>
+                <p class="mt-1 text-light">Agen perjalanan tepercaya Anda sejak 2012. Kami hadir untuk mewujudkan
+                    keinginan Anda menjelajahi keindahan dunia.</p>
+                <div class="social-links-travel mt-1">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Destinasi</h4>
+                <ul>
+                    <li><a href="#">Eropa Barat & Timur</a></li>
+                    <li><a href="#">Jepang & Korea</a></li>
+                    <li><a href="#">Bali & Lombok</a></li>
+                    <li><a href="#">Turki & Dubai</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Hubungi Kami</h4>
+                <p><i class="fas fa-map-marker-alt text-primary"></i> Gedung TravelHub Lt. 3, Jakarta</p>
+                <p><i class="fas fa-phone-alt text-primary"></i> WA: +62 812-3456-7890</p>
+                <p><i class="fas fa-envelope text-primary"></i> booking@wanderlust.id</p>
+            </div>
+        </div>
+        <div class="footer-bottom text-center">
+            <p>&copy; 2026 Wanderlust Travel. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

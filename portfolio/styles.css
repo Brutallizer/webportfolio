@@ -510,6 +510,7 @@ p {
     font-weight: 900;
     background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -1063,6 +1064,7 @@ p {
     line-height: 1;
     background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-bottom: 0.8rem;
 }
@@ -1121,6 +1123,7 @@ p {
     opacity: 0.08;
     border-radius: 50%;
     z-index: 1;
+    pointer-events: none;
 }
 
 /* =============== FOOTER =============== */

@@ -1,5 +1,7 @@
 {
   "rewrites": [
-    { "source": "/", "destination": "/portfolio/index.html" }
+    { "source": "/", "destination": "/portfolio/index.html" },
+    { "source": "/styles.css", "destination": "/portfolio/styles.css" },
+    { "source": "/script.js", "destination": "/portfolio/script.js" }
   ]
 }

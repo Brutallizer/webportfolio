@@ -217,19 +217,7 @@ p {
     overflow: hidden;
 }
 
-/* Abstract placeholder for hero until images are generated */
-.hero-placeholder-pattern {
-    width: 100%;
-    height: 100%;
-    background:
-        linear-gradient(135deg, #f2ead3 25%, transparent 25%) -50px 0,
-        linear-gradient(225deg, #f2ead3 25%, transparent 25%) -50px 0,
-        linear-gradient(315deg, #f2ead3 25%, transparent 25%),
-        linear-gradient(45deg, #f2ead3 25%, transparent 25%);
-    background-size: 100px 100px;
-    background-color: #e5d9c5;
-    opacity: 0.6;
-}
+/* Removed placeholder pattern since hero background uses inline style */
 
 .hero-overlay {
     position: absolute;
@@ -240,11 +228,7 @@ p {
     background: linear-gradient(90deg, rgba(250, 249, 246, 1) 0%, rgba(250, 249, 246, 0.8) 50%, rgba(250, 249, 246, 0) 100%);
 }
 
-.navbar.scrolled~.hero .hero-overlay,
-/* When navbar scrolls */
-.hero.scrolled-past .hero-overlay {
-    /* No visual change needed here, just context */
-}
+/* Overlay manages visibility separately */
 
 .hero-content {
     max-width: 650px;
@@ -297,8 +281,8 @@ p {
 
 .grid-collection {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
 }
 
 .product-card {
@@ -306,6 +290,8 @@ p {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
     transition: var(--transition-medium);
     border: 1px solid rgba(0, 0, 0, 0.03);
+    overflow: hidden;
+    /* Ensure rounded corners clip images if applied */
 }
 
 .product-card:hover {
@@ -313,21 +299,16 @@ p {
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
 }
 
-.card-img-placeholder {
+.card-img {
     width: 100%;
-    height: 350px;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+    transition: transform var(--transition-slow);
 }
 
-.warm-tones {
-    background: linear-gradient(45deg, #eaddcf, #d4beaa);
-}
-
-.elegant-tones {
-    background: linear-gradient(45deg, #2b1f1a, #523a31);
-}
-
-.earthy-tones {
-    background: linear-gradient(45deg, #a1785c, #d1ab93);
+.product-card:hover .card-img {
+    transform: scale(1.05);
 }
 
 .card-content {
@@ -455,6 +436,10 @@ footer {
     transition-delay: 0.4s;
 }
 
+.delay-3 {
+    transition-delay: 0.6s;
+}
+
 /* =============== RESPONSIVE =============== */
 @media (max-width: 992px) {
     .hero-title {
@@ -463,6 +448,7 @@ footer {
 
     .grid-collection {
         grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
     }
 }
 
@@ -483,6 +469,7 @@ footer {
 
     .grid-collection {
         grid-template-columns: 1fr;
+        gap: 2rem;
     }
 
     .footer-content {

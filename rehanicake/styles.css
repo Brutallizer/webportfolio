@@ -368,28 +368,12 @@ p {
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
 }
 
-.placeholder-img {
+.hero-img {
     width: 100%;
     height: 100%;
     border-radius: 180px 180px 0 0;
     object-fit: cover;
-}
-
-/* Using CSS Gradients as elegant image placeholders since generation failed */
-.cake-placeholder {
-    background: linear-gradient(135deg, #ffd1dc 0%, #ffdfd3 100%);
-    position: relative;
-    overflow: hidden;
-}
-
-.cake-placeholder::after {
-    content: '🍰';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 5rem;
-    opacity: 0.3;
+    display: block;
 }
 
 .float-decor {
@@ -464,65 +448,16 @@ p {
     position: relative;
 }
 
-/* Pastry Placeholders */
-.pastry-placeholder-1 {
-    background: linear-gradient(45deg, #ffdfd3, #fff);
-    border-radius: 15px;
+.card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform var(--transition-slow);
 }
 
-.pastry-placeholder-1::after {
-    content: '🍓';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 3rem;
-    opacity: 0.5;
-}
-
-.pastry-placeholder-2 {
-    background: linear-gradient(45deg, #e3c1b8, #fff);
-    border-radius: 15px;
-}
-
-.pastry-placeholder-2::after {
-    content: '🍫';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 3rem;
-    opacity: 0.5;
-}
-
-.pastry-placeholder-3 {
-    background: linear-gradient(45deg, #d1f2eb, #fff);
-    border-radius: 15px;
-}
-
-.pastry-placeholder-3::after {
-    content: '🍬';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 3rem;
-    opacity: 0.5;
-}
-
-.pastry-placeholder-4 {
-    background: linear-gradient(45deg, #fcf3cf, #fff);
-    border-radius: 15px;
-}
-
-.pastry-placeholder-4::after {
-    content: '🧀';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 3rem;
-    opacity: 0.5;
+.product-card:hover .card-img {
+    transform: scale(1.05);
 }
 
 .favorite-tag {
@@ -549,6 +484,7 @@ p {
     margin-bottom: 1.5rem;
     display: -webkit-box;
     -webkit-line-clamp: 2;
+    line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
@@ -607,15 +543,10 @@ p {
 }
 
 .polaroid-img {
-    background: #fdf5e6;
+    width: 218px;
     height: 200px;
-    border-radius: 0;
-}
-
-.polaroid-img-2 {
-    background: #ffdfd3;
-    height: 200px;
-    border-radius: 0;
+    object-fit: cover;
+    display: block;
 }
 
 .caption {
